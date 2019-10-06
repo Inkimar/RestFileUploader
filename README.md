@@ -30,11 +30,10 @@ Upgraded the version of Jersey to 1.19.4
 if you change the package-name then you need to update the param-value to the new package in the web.xml-file
 
 ```
-       <init-param>
-			<param-name>com.sun.jersey.config.property.packages</param-name>
-			<param-value>se.nrm.bio.attachment</param-value>
-		</init-param>
-
+	<init-param>
+		<param-name>com.sun.jersey.config.property.packages</param-name>
+		<param-value>se.nrm.bio.attachment</param-value>
+	</init-param>
 ```
 
 # Creating a large file,  uploading the file using firefox.
