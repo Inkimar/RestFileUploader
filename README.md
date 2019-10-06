@@ -36,6 +36,10 @@ if you change the package-name then you need to update the param-value to the ne
 	</init-param>
 ```
 
+tip <p>
+Jersey application Configuration. This configures jersey so we don’t need a web.xml file. <p>
+https://memorynotfound.com/test-jersey-rest-service-with-junit/
+
 # Creating a large file,  uploading the file using firefox.
 
 ## 2G
