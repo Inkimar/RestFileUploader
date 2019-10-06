@@ -26,6 +26,17 @@ Upgraded the version of Jersey to 1.19.4
 2. The name of the war-file is set in the pom.xml -> ```<finalName>FileUploader</finalName>```
 
 
+#Troubleshooting
+if you change the package-name then you need to update the param-value to the new package in the web.xml-file
+
+```
+       <init-param>
+			<param-name>com.sun.jersey.config.property.packages</param-name>
+			<param-value>se.nrm.bio.attachment</param-value>
+		</init-param>
+
+```
+
 # Creating a large file,  uploading the file using firefox.
 
 ## 2G
@@ -154,7 +165,9 @@ test jpeg
 
 test zip
 
-```[File Type] Detected File Type Name - ZIP[File Type] Detected File Type Long Name - ZIP Archive[File Type] Detected MIME Type - application/zip[File Type] Expected File Name Extension - .zip ```
+```
+[File Type] Detected File Type Name - ZIP[File Type] Detected File Type Long Name - ZIP Archive[File Type] Detected MIME Type - application/zip[File Type] Expected File Name Extension - .zip 
+```
 
 # Jersey test
 
