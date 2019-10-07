@@ -8,7 +8,7 @@
 	<version>1</version>
 	<packaging>war</packaging>
 
-	<name>File Uploader Rest </name>
+	<name>File Uploader Rest</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -63,6 +63,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>BioUpload</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -89,7 +90,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>BioUpload</finalName>
 	</build>
 
 </project>
