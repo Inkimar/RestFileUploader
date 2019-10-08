@@ -1,0 +1,31 @@
+java-kod: https://github.com/dina-web-nrm/mediaserver-module
+- travis.yml
+- var finns restful-tjänsterna.
+- apiary -> https://media8.docs.apiary.io/#
+-- > borde göras om i swagger ?
+-> https://github.com/dina-web-nrm/mediaserver-module/blob/master/web/src/main/java/se/nrm/bio/mediaserver/rs/MediaResourceForm.java
+
+posta b64:
+https://github.com/dina-web-nrm/mediaserver-module/blob/master/web/src/main/java/se/nrm/bio/mediaserver/rs/NewMediaResourceForm.java 
+
+curl -v -H "Content-type: application/json" -X POST -d @big.b64 http://localhost:8080/BioUploadv02/rest/testb64
+curl -v  -F 'file=@dragon.gif' http://localhost:8080/BioUploadv02/rest/upload
+
+#file is the '@FormDataParam' in the restful-endpoint, so -F 'file=@dragon.gif' ( http://localhost:8080/BioUploadv02/rest/upload )
+
+curl -i -H "Accept: application/json" -H "Content-type: application/json" -X POST -d @big.b64 http://localhost:8080/BioUploadv02/rest/b64 
+curl -i -H "Accept: application/json" -H "Content-type: application/json" -X POST -d @big.b64 http://localhost:8080/BioUploadv02/rest/testb64 
+
+curl http://localhost:8080/BioUploadv02/rest/get
+
+# self-testing - lägg in i .gitignore
+*.b64
+head.json
+tail.json
+
+{"firstName":"ingimar","lastName":"erlingsson"}
+
+docker: https://github.com/Inkimar/media-docker
+
+2019-10-07
+Testa här -> https://www.mkyong.com/webservices/jax-rs/restful-java-client-with-jersey-client/ 

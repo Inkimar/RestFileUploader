@@ -1,0 +1,10 @@
+version: '3.7'
+
+services: 
+  app:
+   image: inkimar/uploader:v0.3
+   container_name: uploader
+   ports:
+       - "8081:8080"
+   volumes:
+     - ./uploaded-files:/tmp/uploader
