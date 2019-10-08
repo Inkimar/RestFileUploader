@@ -20,6 +20,11 @@ Testing the 'drewnoakes meta-extractor'-library
 
 ***
 
+## endpoints
+1. saves file : rest/upload 
+2. harvesting metadata and saving file: rest/upload/extra 
+
+
 Upgraded the version of Jersey to 1.19.4
 1. The restful-services are defined in the file FileUploadService.java
 2. hardcoded : the 'UPLOAD_FOLDER' to point at 
