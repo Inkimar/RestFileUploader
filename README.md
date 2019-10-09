@@ -20,6 +20,10 @@ Testing the 'drewnoakes meta-extractor'-library
 
 ***
 
+## docker
+1. fetches the artifact from internet archive, so the war-file needs to be uploaded (wip, not-automatic now)
+2. from Dockerfiler -> RUN curl -O -L https://archive.org/download/biouploadv03/BioUploadv03.war 
+
 ## endpoints
 1. saves file : rest/upload 
 2. harvesting metadata and saving file: rest/upload/extra 
