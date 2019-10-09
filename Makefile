@@ -14,12 +14,6 @@ start-browser:
 
 start-uploader:
 	xdg-open http://localhost:8081/BioUpload/ &
-	
-login:
-	@docker exect -it 
-
-test-barebone:
-	@docker run -it --rm -p 8888:8080 tomcat:8.5-jdk8 bash
 
 # https://stackoverflow.com/questions/12667797/using-curl-to-upload-post-data-with-files
 post-curl:
@@ -27,3 +21,7 @@ post-curl:
 
 post-binary:
 	@curl -v  -F 'file=@./self-testing/dragon.gif' ${HOST}/rest/upload
+
+# extra
+test-barebone:
+	@docker run -it --rm -p 8888:8080 tomcat:8.5-jdk8 bash
