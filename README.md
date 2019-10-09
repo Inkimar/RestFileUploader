@@ -1,5 +1,5 @@
 # RestFileUploader
-proof-of-concept, uploading files up to 6GB - 
+proof-of-concept, uploading files up to 6GB (binary-files) 
 
 1. deployed in Tomcat 8.0.27 (/home/ingimar/SERVERS/apache-tomcat-8.0.27/bin) 
 2. using 'Eclipse IDE for Enterprise Java Developers.' Version   2019-03 (4.11.0)
