@@ -8,17 +8,18 @@
 	<version>1</version>
 	<packaging>war</packaging>
 
-	<name>File Uploader Restful</name>
+	<name>2019-novFileUploaderServer</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		
 		<jersey.version>1.19.4</jersey.version>
 		<tika.version>1.22</tika.version>
 		<junit.version>4.12</junit.version>
 		<log4j.version>1.2.17</log4j.version>
 	</properties>
 
-	<!-- https://mvnrepository.com/artifact/com.sun.jersey -->
+	<!-- Works for Tomcat 8-->
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-server -->
 		<dependency>
@@ -76,6 +77,14 @@
 			<version>4.3.1.Final</version>
 		</dependency>
 
+                   <!--for the test-client -->
+                <dependency>
+                    <groupId>org.apache.httpcomponents</groupId>
+                    <artifactId>httpmime</artifactId>
+                    <version>4.5.10</version>
+                    <!--<version>4.3.6</version>-->
+                    <type>jar</type>
+                </dependency>
 
 	</dependencies>
 
