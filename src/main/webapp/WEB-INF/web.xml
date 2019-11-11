@@ -7,7 +7,7 @@
 	<display-name>Proof-Of-Concept, trying to upload 6GB files</display-name>
 	<welcome-file-list>
 		<welcome-file>fileuploader.html</welcome-file>
-	</welcome-file-list>
+	</welcome-file-list>	
 	<servlet>
 		<servlet-name>Jersey REST Service</servlet-name>
 		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
