@@ -1,7 +1,7 @@
 version: '3.7'
 
 services: 
-  app:
+  uploader:
    image: inkimar/uploader:v0.3
    container_name: uploader
    ports:
